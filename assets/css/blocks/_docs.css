@@ -1,0 +1,43 @@
+.docs {
+    /* padding: 30px; */
+    background: var(--color-bg);
+}
+.docs__container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.section__title {
+}
+.docs__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+.doc {
+    display: flex;
+    align-items: center;
+    min-height: 48px;
+    border-radius: 10px;
+    padding: 10px 20px 10px 55px;
+    position: relative;
+    background: var(--color-bg-secondary);
+}
+.doc::before {
+    content: '';
+    background-image: url(../../images/docs/pdf-svgrepo-com.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: absolute;
+    left: 15px;
+    bottom: 10px;
+    width: 30px;
+    height: 28px;
+}
+.doc__link:hover {
+    color: var(--color-primary);
+}

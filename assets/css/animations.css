@@ -1,0 +1,13 @@
+.dropdown__list {
+  display: none;
+  transition: all 0.3s ease;
+}
+.dropdown__list.open {
+  display: block;
+}
+.dropdown__toggle {
+  transition: transform 0.3s ease;
+}
+.dropdown__toggle.rotated {
+  transform: rotate(180deg);
+}

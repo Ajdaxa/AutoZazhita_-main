@@ -1,60 +1,136 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>АвтоЗащита</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="shortcut icon" href="assets/images/components/favicon.ico" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-    </head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>АвтоЗащита</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="shortcut icon" href="assets/images/components/favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  </head>
 <body>
-    <div class="wrapper">
-        <section class="calculator">
-            <div class="calculator__container container">
-                <div class="calculate">
-                    <h2 class="section__title mb-20">ОСАГО</h2>
-                    <div>
-                        <div class="calculate__radio_btn-type_insurance">
-                            <div class="form_radio_btn">
-                                <input id="radio-1" type="radio" name="radio" value="1" checked>
-                                <label for="radio-1">Оформить</label>
-                            </div>
-                            
-                            <div class="form_radio_btn">
-                                <input id="radio-2" type="radio" name="radio" value="2">
-                                <label for="radio-2">Продлить</label>
-                            </div>
-                        </div>
-                        <h3 class="calculate__vehicle__name">Транспортное средство</h3>
-                        <div class="calculate__details">
-                            <input placeholder="ФИО страхователя" type="text" class="input calculate__input-user_name">
-                            <input placeholder="Госномер" type="text" class="input calculate__input-user_plate">
-                            <button class="calculate__btn-confirm">Рассчитать стоимость</button>
-                        </div>
-                    </div>
-                    <div class="calculate__info">
-                        <div class="dop__uslugi">
-                            <h3 class="calculate__info-title">Дополнительные услуги</h3>
-                            <ul class="calculate_chekbox">
-                        </div>
-    
-                        </ul>
-                        <div class="calculate__requirements">
-                            <h3 class="calculate__requirements__title"></h3>
-                            <ul class="requirements__list">
-                                <li class="requirement">Документы на ТС</li>
-                                <li class="requirement">Документ страхователя</li>
-                                <li class="requirement">Документ собственника</li>
-                                <li class="requirement">Водительское удостоверение</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+  <div class="wrapper">
+    <section class="calculator">
+      <div class="calculator__container container">
+        <div class="calculate">
+          <h2 class="calculator__section-title section__title mb-10">ОСАГО</h2>
+          <div class="calculate__left">
+              <div class="calculate__radio_btn-type_insurance">
+                  <div class="form_radio_btn">
+                      <input id="radio-1" type="radio" name="radio" value="1" checked>
+                      <label for="radio-1">Оформить</label>
+                  </div>
+                  
+                  <div class="form_radio_btn">
+                      <input id="radio-2" type="radio" name="radio" value="2">
+                      <label for="radio-2">Продлить</label>
+                  </div>
+              </div>
+              <h3 class="calculate__vehicle__name">Транспортное средство</h3>
+              <div class="calculate__details">
+                  <input placeholder="ФИО страхователя" type="text" class="input calculate__input-user_name">
+                  <input placeholder="Госномер" type="text" class="input calculate__input-user_plate plate">
+                  <button class="calculate__btn-confirm">Рассчитать стоимость</button>
+                  <div class="asd"></div>
+              </div>
+          </div>
+          <div class="calculate__info">
+            <div class="dop__uslugi">
+              <h3 class="calculate__info-title">Дополнительные услуги</h3>
+              <ul class="calculate_chekbox">
+              </ul>
             </div>
-        </section>
-    </div>
+            <div class="dropdown calculate__requirements">
+              <div class="dropdown__header req__title">
+                <h3 class="dropdown__title calculate__requirements__title">Для оформления понадобятся</h3>
+                <button class="dropdown__toggle btn_open-list">
+                  <img src="assets/images/components/arrow-open.svg" alt="Открыть">
+                </button>
+              </div>
+              <ol class="dropdown__list drop-list requirements__list">
+                <li class="dropdown__item requirement">Документы на ТС</li>
+                <li class="dropdown__item requirement">Документ страхователя</li>
+                <li class="dropdown__item requirement">Документ собственника</li>
+                <li class="dropdown__item requirement">Водительское удостоверение</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="faq">
+      <div class="faq__container container">
+        <h2 class="section__title mb-10">Полезная информация</h2>
+        <ul class="dropdown faq__list">
+          <li class="faq__item dropdown">
+            <div class="dropdown__header faq__top">
+              <h3 class="dropdown__title faq__item-title">Какие документы нужны для оформления</h3>
+              <button class="faq__toggle dropdown__toggle btn_open-list">
+                <svg width="19" height="12" viewBox="0 0 19 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path class="asd" d="M18.25 1L9.68705 10L1 1" stroke="#262626" stroke-width="2" />
+                </svg>
+              </button>
+            </div>
+            <ol class="dropdown__list drop-list faq__item-desc">
+              <li>Паспорт страхователя (того, кто заключает договор)</li>
+              <li>Паспорт транспортного средства (ПТС)</li>
+              <li>Водительские права всех, кто будет управлять автомобилем</li>
+              <li>Документы, подтверждающие стоимость транспортного средства</li>
+            </ol>
+          </li>
+          <li class="faq__item dropdown">
+            <div class="dropdown__header faq__top">
+              <h3 class="dropdown__title faq__item-title">Какие документы нужны для оформления</h3>
+              <button class="faq__toggle dropdown__toggle btn_open-list">
+                <svg width="19" height="12" viewBox="0 0 19 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path class="asd" d="M18.25 1L9.68705 10L1 1" stroke="#262626" stroke-width="2" />
+                </svg>
+              </button>
+            </div>
+            <ol class="dropdown__list drop-list faq__item-desc">
+              <li>Паспорт страхователя (того, кто заключает договор)</li>
+              <li>Паспорт транспортного средства (ПТС)</li>
+              <li>Водительские права всех, кто будет управлять автомобилем</li>
+              <li>Документы, подтверждающие стоимость транспортного средства</li>
+            </ol>
+          </li>
+          <li class="faq__item dropdown">
+            <div class="dropdown__header faq__top">
+              <h3 class="dropdown__title faq__item-title">Какие документы нужны для оформления</h3>
+              <button class="faq__toggle dropdown__toggle btn_open-list">
+                <svg width="19" height="12" viewBox="0 0 19 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path class="asd" d="M18.25 1L9.68705 10L1 1" stroke="#262626" stroke-width="2" />
+                </svg>
+              </button>
+            </div>
+            <ol class="dropdown__list drop-list faq__item-desc">
+              <li>Паспорт страхователя (того, кто заключает договор)</li>
+              <li>Паспорт транспортного средства (ПТС)</li>
+              <li>Водительские права всех, кто будет управлять автомобилем</li>
+              <li>Документы, подтверждающие стоимость транспортного средства</li>
+            </ol>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="docs">
+      <div class="docs__container container">
+        <h2 class="section__title mb-10">Документы</h2>
+        <ul class="docs__list">
+          <li class="doc"><a class="doc__link" href="assets/images/card/nomer.svg" download>Правила обязательного страхования</a>
+          </li>
+          <li class="doc"><a class="doc__link" href="assets/css/style.css" download>Заявление погашения</a>
+          </li>
+          <li class="doc"><a class="doc__link" href="assets/css/style.css" download>Лицензии компании</a>
+          </li>
+          <li class="doc"><a class="doc__link" href="assets/css/style.css" download>Бланк извещения о ДТП</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </div>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
