@@ -1,0 +1,102 @@
+.header__container {
+	background-color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 30px;
+	border-radius: 0 0 15px 15px;
+}
+.header__logo img {
+	width: 100px;
+}
+.header__nav {}
+.header__nav-list {
+	display: flex;
+	align-items: center;
+	gap: 0.8rem;
+}
+.header__nav-item {}
+.header__search {
+	padding: 5px 15px 5px 28px;
+	border: 0.5px solid #818698;
+	border-radius: 15px;
+	font-weight: 500;
+	min-width: 80px;
+	max-width: 90px;
+	transition: .3s ease-in-out;
+}
+.header__search:hover{
+	border: .5px solid var(--color-primary);
+	transition: .3s ease-in-out;
+}
+.header__search:focus{
+	border: .5px solid var(--color-primary);
+	box-shadow: 0px 0px 5px #9f9fa096;
+	max-width: 150px;
+	transition: .3s ease-in-out;
+}
+.header__search:hover::placeholder{
+	transition: .3s ease-in-out;
+	color: var(--color-primary);
+}
+.header__search::placeholder {
+	color: #818698;
+}
+.header__search-btn {}
+.header__nav-link{
+	transition: .3s ease-in-out;
+}
+.header__nav-link:hover {
+	transition: .3s ease-in-out;
+	color: var(--color-primary);
+}
+.nav__link {}
+
+.header__actions {
+	display: flex;
+	gap: 0.8rem;
+}
+
+.header__actions-btn {
+	font-weight: 500;
+}
+
+.btn-support:hover, .btn-support:hover path{
+	color: #474747;
+	fill: #474747;
+}
+.btn-support-icon{
+	margin-bottom: -2px;
+}
+.btn-insurance {
+	color: #FF3B30;
+}
+.btn-insurance:hover, .btn-insurance:hover path {
+	color: #ff726a;
+	fill: #ff726a;
+}
+.btn-insurance-icon{
+	margin-bottom: -2px;
+}
+.btn-login {
+	display: flex;
+	align-items: center;
+	padding: 3px 3px 3px 10px;
+	text-align: center;
+	color: #818698;
+	border: 0.3px solid #818698;
+	border-radius: 15px;
+}
+
+.btn-login:hover {
+	color: var(--color-primary);
+	border: 0.3px solid var(--color-primary);
+}
+
+.login-icon {
+	margin-left: 5px;
+	padding: 1px;
+	background-color: #ededed;
+	border-radius: 50%;
+	height: 20px;
+}

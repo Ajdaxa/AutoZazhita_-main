@@ -1,0 +1,132 @@
+.calculator {}
+
+.calculator__container {
+    display: flex;
+    gap: 20px;
+}
+
+.section__title {}
+
+.calculate {
+    border-radius: 15px;
+    padding: 30px;
+    background-color: #fff;
+}
+
+.calculate__radio_btn-type_insurance {
+    padding: 5px;
+    border-radius: 15px;
+    background-color: var(--color-bg-secondary);
+}
+
+.form_radio_btn {}
+
+.calculate__vehicle__name {}
+
+.calculate__details {
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 1fr 1fr;
+    flex-wrap: wrap;
+    background-color: var(--color-bg-secondary);
+    border-radius: 15px;
+    display: grid;
+    gap: 5px;
+}
+.input{
+    border: 1px solid var(--color-text-light);
+    border-radius: 15px;
+    padding: 0px 15px;
+    background-color: var(--color-bg-secondary);
+    line-height: 1;
+    font-size: 16px;
+    color: #262626;
+}
+.input::placeholder{
+    color: var(--color-text-light);
+}
+.calculate__input-user_name {
+    grid-column: 1/-1;
+    grid-row: 1/2;
+}
+
+.calculate__input-user_plate {
+    grid-row: 2/3;
+    grid-column: 1/2;
+}
+
+.calculate__btn-confirm {
+    grid-row: 2/3;
+    grid-column: 2/3;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: var(--color-primary);
+    border-radius: 15px;
+}
+
+.calculate__info {
+    padding: 5px;
+    background-color: var(--color-bg-secondary);
+    display: flex;
+    gap: 5px;
+    border-radius: 15px;
+    flex-direction: column;
+}
+
+.calculate__info-title {}
+.dop__uslugi{
+    background-color: #fff;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+.calculate_chekbox {}
+
+.calculate__requirements {
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.calculate__requirements__title {}
+
+.requirements__list {}
+
+.requirement {}
+
+.form_radio_btn {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.form_radio_btn input[type=radio] {
+    display: none;
+}
+
+.form_radio_btn label {
+    display: inline-block;
+    cursor: pointer;
+    padding: 0px 15px;
+    color: var(--color-text-light);
+    border-radius: 15px;
+    user-select: none;
+    padding: 10px 20px;
+    border: 1px solid transparent;
+}
+
+.form_radio_btn input[type=radio]:checked+label {
+    border: 1px solid var(--color-primary);
+    border-radius: 15px;
+    padding: 10px 20px;
+    color: var(--color-primary);
+}
+
+.form_radio_btn label:hover {
+    color: #666;
+}

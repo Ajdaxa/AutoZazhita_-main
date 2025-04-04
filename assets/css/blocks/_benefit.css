@@ -1,0 +1,40 @@
+.benefits__container {
+	background-color: #fff;
+	border-radius: 15px;
+	padding: 30px;
+}
+.container {
+}
+.section__title {
+}
+.benefits__list {
+}
+.benefits-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 20px;
+}
+.benefits__item {
+	
+}
+.benefits__card {
+	border: 1px solid #ebebeb;
+	background-color: #f6f6f6;
+	border-radius: 15px;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+.benefit__card-img {
+	margin-bottom: 10px;
+	width: 75px;
+}
+.benefit__card-title {
+	width: 100%;
+}
+.benefit__desc {
+	flex: 1;
+}
+.desc {
+}
