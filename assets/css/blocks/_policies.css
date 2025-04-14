@@ -1,0 +1,36 @@
+.profile__container {
+	background-color: #fff;
+	border-radius: 15px;
+	padding: 30px;
+}
+.section__title {
+    grid-column: 1/-1;
+}
+.policies-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.pp-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: var(--color-bg-secondary);
+    transition: all 0.3s ease-in-out;
+}
+.policies__btn-more {
+	padding: 3px 10px 6px;
+	border: 0.5px solid #262626;
+	border-radius: 20px;
+	transition: all 0.3s ease-in-out;
+}
+.policies__btn-more:hover {
+	background-color: var(--color-primary);
+	border: 0.5px solid var(--color-primary);
+	transition: all 0.3s ease-in-out;
+}
+.policies__btn-more:hover .policies__icon path {
+    fill: #ffffff;
+}

@@ -1,0 +1,45 @@
+.profile {
+}
+.profile__container {
+    width: 100%;
+}
+.section__title {
+}
+.profile__info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.profile__info-img {
+    margin-top: 20px;
+}
+.profile__img {
+}
+.profile__info-name {
+}
+.pit{
+    display: flex;
+    align-items: center;
+}
+.profile__info-label {
+    max-width: 150px;
+    flex: 1;
+
+}
+.profile__info-value {
+}
+.profile__info-birthday {
+}
+.profile__info-phone {
+}
+.profile__info-email {
+}
+.profile__btn-edit {
+    margin-top: 20px;
+    
+}
+.profile__btn-edit:hover {
+    color: var(--color-primary);
+    transition: all 0.3s ease-in-out;
+    text-decoration: underline;
+}

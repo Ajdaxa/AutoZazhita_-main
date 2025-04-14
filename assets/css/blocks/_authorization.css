@@ -1,0 +1,128 @@
+.modal__window {
+	position: absolute;
+	display: flex;
+	width: 100%;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--color-bg-secondary);
+}
+.modal-login {
+	padding: 30px;
+	background-color: #fff;
+	border-radius: 15px;
+	width: 500px;
+	display: flex;
+	flex-direction: column;
+	/* gap: 40px; */
+}
+.modal__login-form, .modal__signup-form {
+	position: relative;
+	padding: 20px 0 40px;
+	gap: 10px;
+	display: flex;
+	flex-direction: column;
+}
+.modal__signup-form::after, 
+.modal__login-form::after {
+	content: '';
+	background-color: #adb3c9;
+	position: absolute;
+	height: 0.5px;
+	width: 100%;
+	bottom: 20px;
+	left: 0;
+}
+.modal__login-form-item {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+.inpsig {
+	width: 100%;
+	padding: 10px 20px;
+}
+.modal-form-input {
+	width: 100%;
+	padding-top: 20px;
+	position: relative;
+}
+.modal-form-input::after {
+	content: '';
+	color: var(--color-text);
+	position: absolute;
+	top: -1px;
+	left: 0;
+}
+.iph::after {
+	content: 'Телефон';
+}
+.ipp::after {
+	content: 'Пароль';
+}
+.modal__btn-submit {
+	padding: 10px 20px;
+	background-color: var(--color-primary);
+	border-radius: 15px;
+	color: #fff;
+	font-weight: 500;
+	height: 40px;
+}
+.login__btn-esia {
+	border: 1px solid #818698;
+	border-radius: 15px;
+	padding: 10px 20px;
+	display: flex;
+	gap: 5px;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+}
+.auth {
+	border: 1px solid var(--color-primary);
+	border-radius: 15px;
+	padding: 10px 20px;
+	display: flex;
+	gap: 5px;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	color: var(--color-primary);
+	height: 40px;
+}
+.modal__btn-submit:hover {
+    background-color: #1f27bf;
+    transition: 0.3s ease-in-out;
+}
+.login__btn-password_reset {
+	color: var(--color-primary);
+}
+.modal-signup {
+	padding: 30px;
+	background-color: #fff;
+	border-radius: 15px;
+	width: 500px;
+	display: flex;
+	flex-direction: column;
+	/* gap: 40px; */
+}
+.modal__signup-form {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+.aemail::after {
+	content: 'Email';
+}
+.arpas::after {
+	content: 'Повторите пароль';
+}
+.modal__signup-form{
+    position: relative;
+}
+.inpsig:focus{
+    border: 1px solid var(--color-primary);
+}
+.inpsig:focus::placeholder{
+    color: var(--color-primary);
+}

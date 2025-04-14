@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +10,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-  </head>
+</head>
+
 <body>
   <div class="wrapper">
     <section class="calculator">
@@ -17,24 +19,25 @@
         <div class="calculate">
           <h2 class="calculator__section-title section__title mb-10">ОСАГО</h2>
           <div class="calculate__left">
-              <div class="calculate__radio_btn-type_insurance">
-                  <div class="form_radio_btn">
-                      <input id="radio-1" type="radio" name="radio" value="1" checked>
-                      <label for="radio-1">Оформить</label>
-                  </div>
-                  
-                  <div class="form_radio_btn">
-                      <input id="radio-2" type="radio" name="radio" value="2">
-                      <label for="radio-2">Продлить</label>
-                  </div>
+            <div class="calculate__radio_btn-type_insurance">
+              <div class="form_radio_btn">
+                <input id="radio-1" type="radio" name="radio" value="1" checked>
+                <label for="radio-1">Оформить</label>
               </div>
-              <h3 class="calculate__vehicle__name">Транспортное средство</h3>
-              <div class="calculate__details">
-                  <input placeholder="ФИО страхователя" type="text" class="input calculate__input-user_name">
-                  <input placeholder="Госномер" type="text" class="input calculate__input-user_plate plate">
-                  <button class="calculate__btn-confirm">Рассчитать стоимость</button>
-                  <div class="asd"></div>
+
+              <div class="form_radio_btn">
+                <input id="radio-2" type="radio" name="radio" value="2">
+                <label for="radio-2">Продлить</label>
               </div>
+            </div>
+            <h3 class="calculate__vehicle__name">Транспортное средство</h3>
+            <div class="calculate__details">
+              <input placeholder="ФИО страхователя" type="text" class="input calculate__input-user_name">
+              <div class="platee">
+                <input placeholder="Госномер" type="text" class="input calculate__input-user_plate">
+              </div>
+              <button class="calculate__btn-confirm">Рассчитать стоимость</button>
+            </div>
           </div>
           <div class="calculate__info">
             <div class="dop__uslugi">
@@ -49,7 +52,7 @@
                   <img src="assets/images/components/arrow-open.svg" alt="Открыть">
                 </button>
               </div>
-              <ol class="dropdown__list drop-list requirements__list">
+              <ol class="dropdown__list drop-list requirements__list openz">
                 <li class="dropdown__item requirement">Документы на ТС</li>
                 <li class="dropdown__item requirement">Документ страхователя</li>
                 <li class="dropdown__item requirement">Документ собственника</li>
@@ -133,4 +136,5 @@
   </div>
   <script src="assets/js/main.js"></script>
 </body>
+
 </html>

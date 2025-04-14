@@ -9,13 +9,11 @@
 .header__logo img {
 	width: 100px;
 }
-.header__nav {}
 .header__nav-list {
 	display: flex;
 	align-items: center;
 	gap: 0.8rem;
 }
-.header__nav-item {}
 .header__search {
 	padding: 5px 15px 5px 28px;
 	border: 0.5px solid #818698;
@@ -49,15 +47,15 @@
 .header__nav-link:hover {
 	transition: .3s ease-in-out;
 	color: var(--color-primary);
-}
-.nav__link {}
-
-.header__actions {
+}.header__actions {
 	display: flex;
+	align-items: center;
 	gap: 0.8rem;
 }
 
 .header__actions-btn {
+	display: flex;
+	align-items: center;
 	font-weight: 500;
 }
 
@@ -67,9 +65,6 @@
 }
 .btn-support-icon{
 	margin-bottom: -2px;
-}
-.btn-insurance {
-	color: #FF3B30;
 }
 .btn-insurance:hover, .btn-insurance:hover path {
 	color: #ff726a;
@@ -99,4 +94,7 @@
 	background-color: #ededed;
 	border-radius: 50%;
 	height: 20px;
+}
+.btn-insurance {
+	color: #FF3B30;
 }

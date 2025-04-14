@@ -1,3 +1,4 @@
+// faq выпадающий список
 document.addEventListener('DOMContentLoaded', () => {
 	document.addEventListener('click', event => {
 		const button = event.target.closest('.dropdown__toggle')
@@ -18,8 +19,9 @@ document.addEventListener('DOMContentLoaded', () => {
 		}
 	})
 })
+// 
 
-
+// валидация инпута госномера
 document.addEventListener('DOMContentLoaded', () => {
 	const inputPlate = document.querySelector('.calculate__input-user_plate')
 
@@ -50,3 +52,5 @@ document.addEventListener('DOMContentLoaded', () => {
 		inputPlate.value = validatedValue
 	})
 })
+// 
+

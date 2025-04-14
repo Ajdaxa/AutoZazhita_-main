@@ -7,9 +7,6 @@
 	display: flex;
 	gap: 20px;
 }
-
-.section__title {
-}
 .calculator__section-title {
 	width: 100%;
 	grid-column: 2 span;
@@ -23,6 +20,7 @@
 	grid-template-columns: repeat(2, 1fr);
 	gap: 20px;
 	align-items: flex-start;
+	position: relative;
 }
 .calculate__left {
 	display: flex;
@@ -35,13 +33,6 @@
 	border-radius: 15px;
 	background-color: var(--color-bg-secondary);
 }
-
-.form_radio_btn {
-}
-
-.calculate__vehicle__name {
-}
-
 .calculate__details {
 	padding: 5px;
 	display: grid;
@@ -50,10 +41,11 @@
 	flex-wrap: wrap;
 	background-color: var(--color-bg-secondary);
 	border-radius: 15px;
-	/* gap: 10px; */
-    width: 100%;
+	gap: 10px;
+	width: 100%;
 }
 .input {
+	/* max-width: 98%; */
 	border: 1px solid var(--color-text-light);
 	border-radius: 15px;
 	padding: 15px;
@@ -69,31 +61,46 @@
 	grid-column: 1/-1;
 	grid-row: 1/2;
 }
-
 .calculate__input-user_plate {
-	grid-row: 2/3;
-	grid-column: 1/2;
-    position: relative;
+	z-index: 2;
+
+	position: relative;
+	width: 100%;
 }
 .plate{
-	/* position: relative;	 */
+	position: relative;
 }
-.plate::after{
+.platee{
+	grid-row: 2/3;
+	grid-column: 1/2;
+	position: relative;
+}
+.platee::after{
 	content: "";
-	width: 100px;
-	height: 100px;
-	/* background-color: red; */
-	background-image: url(../../images/card/nomer.svg);
-	background-repeat: no-repeat;
-	background-size: contain;
 	position: absolute;
-	background-position: center;
-	right: 40px;
-	bottom: 20px;
-}
-.calculate__input-user_plate::before{
+	width: 100%;
+	height: 20%;
+	background-image: url('../../images/card/nomer.svg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	top: 0;
+	right: 0;
+	z-index: 99;
+
 }
 
+.plate{
+	content: "";
+	grid-row: 2/3;
+	grid-column: 1/2;
+	/* position: absolute; */
+	/* top: 30px;
+	left: 30px; */
+	width: 20px;
+	height: 20px;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
 .calculate__btn-confirm {
 	grid-row: 2/3;
 	grid-column: 2/3;
@@ -102,7 +109,6 @@
 	background-color: var(--color-primary);
 	border-radius: 15px;
 }
-
 .calculate__info {
 	width: 100%;
 	padding: 5px;
@@ -118,12 +124,6 @@
 	justify-content: space-between;
 	align-items: center;
 }
-.calculate__requirements__title {
-}
-.req__btn_open-list {
-}
-.calculate__info-title {
-}
 .dop__uslugi {
 	background-color: #fff;
 	border-radius: 15px;
@@ -132,8 +132,6 @@
 	gap: 10px;
 	padding: 15px;
 }
-.calculate_chekbox {
-}
 .calculate__requirements {
 	background-color: #fff;
 	padding: 15px;
@@ -141,8 +139,6 @@
 	display: flex;
 	flex-direction: column;
 	gap: 5px;
-}
-.calculate__requirements__title {
 }
 .requirements__list {
 	display: flex;
@@ -156,7 +152,7 @@
 }
 
 .form_radio_btn {
-    transition: all .3s ease;
+	transition: all 0.3s ease;
 	display: inline-block;
 	margin-right: 10px;
 }

@@ -27,8 +27,6 @@
     background: var(--color-bg-secondary);
 }
 .doc::before {
-
-    
     content: '';
     background-image: url(../../images/docs/pdf-svgrepo-com.svg);
     background-repeat: no-repeat;

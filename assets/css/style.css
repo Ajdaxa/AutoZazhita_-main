@@ -2,6 +2,7 @@
 @import url(reset.css);
 @import url(root.css);
 @import url(animations.css);
+@import url(animations.css);
 /* /settings */
 /* blocks */
 @import url(blocks/_header.css);
@@ -14,4 +15,9 @@
 @import url(blocks/_calculate.css);
 @import url(blocks/_faq.css);
 @import url(blocks/_docs.css);
+@import url(blocks/_policies.css);
+@import url(blocks/_profile.css);
+@import url(blocks/_authorization.css);
+/* @import url(blocks/swiper.min.css); */
 /* /blocks */
+@import url(adaptive.css);

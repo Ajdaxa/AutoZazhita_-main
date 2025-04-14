@@ -6,6 +6,7 @@
 }
 body{
     background-color: var(--color-bg-secondary);
+    position: relative;
 }
 .wrapper{
     display: flex;
