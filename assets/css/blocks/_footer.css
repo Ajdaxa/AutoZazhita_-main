@@ -1,4 +1,5 @@
 .footer {
+    flex-shrink: 0;
 }
 .footer__container {
     padding: 30px;

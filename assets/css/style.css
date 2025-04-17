@@ -18,6 +18,7 @@
 @import url(blocks/_policies.css);
 @import url(blocks/_profile.css);
 @import url(blocks/_authorization.css);
+@import url(blocks/_panel.css);
 /* @import url(blocks/swiper.min.css); */
 /* /blocks */
 @import url(adaptive.css);

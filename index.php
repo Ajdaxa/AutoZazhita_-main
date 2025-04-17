@@ -31,14 +31,16 @@ include('assets/html/head.php');
                 include('assets/html/register.php');
             } elseif ($_GET['page'] == 'login') {
                 include('assets/html/login.php');
+            } elseif ($_GET['page'] == 'panel') {
+                include('assets/html/panel.php');
             } else {
-                // include('assets/html/404.php');
+                include('assets/html/404.php');
             }
         } else {
             include('assets/html/home.php');
         }
         ?>
-        <?php include("assets/html/footer.html") ?>
+        <?php include("assets/html/footer.php") ?>
     </div>
     <script src="assets/js/main.js"></script>
 </body>

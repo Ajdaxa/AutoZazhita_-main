@@ -1,4 +1,4 @@
-<?
+<?php
 include 'assets/database/connect.php';
 $flag = true;
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {

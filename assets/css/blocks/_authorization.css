@@ -1,8 +1,9 @@
 .modal__window {
 	position: absolute;
 	display: flex;
-	width: 100%;
+	width: 100vw;
 	height: 100vh;
+	display: flex;
 	justify-content: center;
 	align-items: center;
 	background-color: var(--color-bg-secondary);

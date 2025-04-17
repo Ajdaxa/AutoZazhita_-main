@@ -25,7 +25,7 @@
                 <label for="radio-1">Оформить</label>
               </div>
 
-              <div class="form_radio_btn">
+              <div style="margin: 0;" class="form_radio_btn">
                 <input id="radio-2" type="radio" name="radio" value="2">
                 <label for="radio-2">Продлить</label>
               </div>
@@ -42,22 +42,40 @@
           <div class="calculate__info">
             <div class="dop__uslugi">
               <h3 class="calculate__info-title">Дополнительные услуги</h3>
-              <ul class="calculate_chekbox">
-              </ul>
-            </div>
-            <div class="dropdown calculate__requirements">
-              <div class="dropdown__header req__title">
-                <h3 class="dropdown__title calculate__requirements__title">Для оформления понадобятся</h3>
-                <button class="dropdown__toggle btn_open-list">
-                  <img src="assets/images/components/arrow-open.svg" alt="Открыть">
-                </button>
+              <div class="ci__bl">
+                <p class="ci3__text">Аварийный комиссар</p>
+                <label class="checkbox-other">
+                  <input type="checkbox" checked />
+                  <span></span>
+                </label>
               </div>
-              <ol class="dropdown__list drop-list requirements__list openz">
-                <li class="dropdown__item requirement">Документы на ТС</li>
-                <li class="dropdown__item requirement">Документ страхователя</li>
-                <li class="dropdown__item requirement">Документ собственника</li>
-                <li class="dropdown__item requirement">Водительское удостоверение</li>
-              </ol>
+              <div class="ci__bl">
+                <p class="ci3__text">Эвакуация автомобиля</p>
+                <label class="checkbox-other">
+                  <input type="checkbox" checked />
+                  <span></span>
+                </label>
+              </div>
+              <div class="ci__bl">
+                <p class="ci3__text">Юридическая поддержка</p>
+                <label class="checkbox-other">
+                  <input type="checkbox" checked />
+                  <span></span>
+                </label>
+              </div>
+            </div>
+            <div data-spollers data-one-spoller class="block  block_1">
+              <div style="background-color: #fff; padding: 15px; margin: 0;" class="block__item">
+                <button tabindex="-1" type="button" data-spoller class="block__title _active">Какие документы нужны для оформления</button>
+                <div class="block__text">
+                  <ol class="dropdown__list drop-list requirements__list open">
+                    <li class="dropdown__item requirement">Документы на ТС</li>
+                    <li class="dropdown__item requirement">Документ страхователя</li>
+                    <li class="dropdown__item requirement">Документ собственника</li>
+                    <li class="dropdown__item requirement">Водительское удостоверение</li>
+                  </ol>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -65,57 +83,43 @@
     </section>
     <section class="faq">
       <div class="faq__container container">
-        <h2 class="section__title mb-10">Полезная информация</h2>
-        <ul class="dropdown faq__list">
-          <li class="faq__item dropdown">
-            <div class="dropdown__header faq__top">
-              <h3 class="dropdown__title faq__item-title">Какие документы нужны для оформления</h3>
-              <button class="faq__toggle dropdown__toggle btn_open-list">
-                <svg width="19" height="12" viewBox="0 0 19 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path class="asd" d="M18.25 1L9.68705 10L1 1" stroke="#262626" stroke-width="2" />
-                </svg>
-              </button>
+        <h2 class="section__title mb-20">Полезная информация</h2>
+        <div data-spollers data-one-spoller class="block  block_1">
+          <div class="block__item">
+            <button tabindex="-1" type="button" data-spoller class="block__title">Как рассчитывается стоимость полиса каско?</button>
+            <div class="block__text">
+              <p class="fd">Стоимость полиса каско рассчитывается на основе нескольких факторов:</p>
+              <ol class="faq__item-desc">
+                <li>Марка, модель и возраст автомобиля.</li>
+                <li>Рыночная стоимость автомобиля.</li>
+                <li>Возраст и стаж водителя.</li>
+                <li>История страховых случаев.</li>
+                <li>Условия эксплуатации автомобиля (например, наличие гаража).</li>
+                <li>Выбор опций страхования и рисков, которые нужно покрыть.</li>
+              </ol>
             </div>
-            <ol class="dropdown__list drop-list faq__item-desc">
-              <li>Паспорт страхователя (того, кто заключает договор)</li>
-              <li>Паспорт транспортного средства (ПТС)</li>
-              <li>Водительские права всех, кто будет управлять автомобилем</li>
-              <li>Документы, подтверждающие стоимость транспортного средства</li>
-            </ol>
-          </li>
-          <li class="faq__item dropdown">
-            <div class="dropdown__header faq__top">
-              <h3 class="dropdown__title faq__item-title">Какие документы нужны для оформления</h3>
-              <button class="faq__toggle dropdown__toggle btn_open-list">
-                <svg width="19" height="12" viewBox="0 0 19 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path class="asd" d="M18.25 1L9.68705 10L1 1" stroke="#262626" stroke-width="2" />
-                </svg>
-              </button>
+          </div>
+          <div class="block__item">
+            <button tabindex="-1" type="button" data-spoller class="block__title">Влияет ли пробег автомобиля на стоимость полиса каско?</button>
+            <div class="block__text">
+              <p class="fd">Да, пробег автомобиля может влиять на стоимость полиса каско. Автомобили с высоким пробегом считаются более подверженными рискам поломок и повреждений, что увеличивает вероятность страхового случая. Поэтому могут устанавливаться более высокие тарифы для автомобилей с большим пробегом.</p>
             </div>
-            <ol class="dropdown__list drop-list faq__item-desc">
-              <li>Паспорт страхователя (того, кто заключает договор)</li>
-              <li>Паспорт транспортного средства (ПТС)</li>
-              <li>Водительские права всех, кто будет управлять автомобилем</li>
-              <li>Документы, подтверждающие стоимость транспортного средства</li>
-            </ol>
-          </li>
-          <li class="faq__item dropdown">
-            <div class="dropdown__header faq__top">
-              <h3 class="dropdown__title faq__item-title">Какие документы нужны для оформления</h3>
-              <button class="faq__toggle dropdown__toggle btn_open-list">
-                <svg width="19" height="12" viewBox="0 0 19 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path class="asd" d="M18.25 1L9.68705 10L1 1" stroke="#262626" stroke-width="2" />
-                </svg>
-              </button>
+          </div>
+          <div class="block__item">
+            <button tabindex="-1" type="button" data-spoller class="block__title">Влияет ли возраст водителя на стоимость полиса каско?</button>
+            <div class="block__text">
+              <p class="fd">Да. Молодые водители (до 25 лет) и водители старше 65 лет считаются более рисковыми группами, что может привести к повышению страховой премии. Опыт и стаж вождения также играют роль: чем больше стаж, тем ниже может быть стоимость полиса.</p>
+              </ol>
             </div>
-            <ol class="dropdown__list drop-list faq__item-desc">
-              <li>Паспорт страхователя (того, кто заключает договор)</li>
-              <li>Паспорт транспортного средства (ПТС)</li>
-              <li>Водительские права всех, кто будет управлять автомобилем</li>
-              <li>Документы, подтверждающие стоимость транспортного средства</li>
-            </ol>
-          </li>
-        </ul>
+          </div>
+          <div class="block__item">
+            <button tabindex="-1" type="button" data-spoller class="block__title">Влияет ли количество водителей на стоимость полиса каско?</button>
+            <div class="block__text">
+              <p class="fd">Это зависит от наполнения полиса каско. Для «полного» каско не влияет, а если риски каско урезаны - влияет.</p>
+              </ol>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <section class="docs">
