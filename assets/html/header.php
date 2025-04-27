@@ -22,13 +22,16 @@ include 'assets/database/connect.php';
 					</button>
 				</li>
 				<li class="header__nav-item">
-					<a href="./?page=card" class="header__nav-link nav__link">Каталог</a>
+					<a href="./" class="header__nav-link nav__link">Главная</a>
+				</li>
+				<li class="header__nav-item">
+					<a onclick="scrollToBlock('_catalog')" class="header__nav-link nav__link">Каталог</a>
 				</li>
 				<li class="header__nav-item">
 					<a href="./?page=profile" class="header__nav-link nav__link">Профиль</a>
 				</li>
-				<li class="header__nav-item">
-					<a href="#" class="header__nav-link nav__link">Поддержка</a>
+				<li onclick="scrollToBlock('_services')" class="header__nav-item">
+					<a class="header__nav-link nav__link">Сервисы</a>
 					<!-- <div class="support">
 						<div class="support__container container">
 							<ul class="support__list support-grid">
@@ -79,7 +82,7 @@ include 'assets/database/connect.php';
 			</ul>
 		</nav>
 		<div class="header__actions">
-			<a href="#" style="display:flex; align-items: center; gap: 5px;" class="header__actions-btn btn-support">
+			<a onclick="scrollToBlock('_support')" href=" #" style="display:flex; align-items: center; gap: 5px;" class="header__actions-btn btn-support">
 				<svg
 					class="btn-support-icon"
 					width="15"
@@ -107,7 +110,7 @@ include 'assets/database/connect.php';
 				</svg>
 				<p class="ha had"">Страховой случай</p>
 			</a>
-			<!-- <?php
+			<?php
 			if (isset($_SESSION['user_id'])) { ?>
 				<a href=" ./?page=register" class="header__actions-btn btn-login">
 					<p class="ha"><?= $USER['username'] ?></p>
@@ -125,14 +128,14 @@ include 'assets/database/connect.php';
 					class="login-icon" />
 			</a>
 		<? }
-		?> -->
-		<a href="./?page=register" class="header__actions-btn btn-login">
+		?>
+		<!-- <a href="./?page=register" class="header__actions-btn btn-login">
 			<p class="ha">Гость</p>
 			<img
 				src="../assets/images/components/login-icon.svg"
 				alt="логин"
 				class="login-icon" />
-		</a>
+		</a> -->
 		</div>
 		<div class="burger">
 			<span></span>

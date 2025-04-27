@@ -1,5 +1,5 @@
-.header{
-      flex-shrink: 0;
+.header {
+  flex-shrink: 0;
 }
 .header__container {
   background-color: #fff;
@@ -15,7 +15,7 @@
 .header__nav-list {
   display: flex;
   align-items: center;
-  gap: 0.8rem;
+  gap: 0.7rem;
 }
 .header__search {
   padding: 5px 15px 5px 28px;
@@ -43,8 +43,6 @@
 .header__search::placeholder {
   color: #818698;
 }
-.header__search-btn {
-}
 .header__nav-link {
   transition: 0.3s ease-in-out;
 }
@@ -55,9 +53,9 @@
 .header__actions {
   display: flex;
   align-items: center;
-  gap: 0.8rem;
+  gap: 0.7rem;
+  position: relative;
 }
-
 .header__actions-btn {
   display: flex;
   align-items: center;
@@ -69,11 +67,14 @@
   color: #474747;
   fill: #474747;
 }
+.btn-support:hover .support {
+  display: block;
+}
 .btn-support-icon {
   margin-bottom: -2px;
 }
-.had{
-	color: #ff3b30;
+.had {
+  color: #ff3b30;
 }
 .btn-insurance:hover,
 .btn-insurance:hover path {
@@ -152,4 +153,7 @@
 .burger.active::after {
   bottom: 50%;
   transform: rotate(45deg) translate(0, 50%);
+}
+.header__nav-link:hover{
+  cursor: pointer;
 }

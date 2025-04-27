@@ -11,14 +11,14 @@
         </div>
     </div>
 </section>
-<section class="catalog">
+<section id="_catalog" class="catalog">
     <div class="catalog__container container">
         <ul class="catalog__list catalog-grid">
             <li class="catalog__item">
                 <article class="catalog__card">
                     <div class="card__top">
                         <h4 class="card__title">ОСАГО</h4>
-                        <button class="card__btn-more">→</button>
+                        <a href="./?page=card" class="card__btn-more">→</a>
                     </div>
                     <p class="card__desc desc">Возместим ущерб третьим лицам, если вы стали виновником ДТП</p>
                     <img src="./assets/images/catalog/card-img-1.svg" alt="" class="card__img">
@@ -85,7 +85,7 @@
         </ul>
     </div>
 </section>
-<section class="sercices">
+<section id="_services" class="sercices">
     <div class="sercices__container container">
         <h2 class="section__title mb-20">Сервисы</h2>
         <ul class="sercices__list services__grid">
@@ -118,6 +118,19 @@
                     <p class="service__desc"></p>
                 </article>
             </li>
+        </ul>
+    </div>
+</section>
+<section id="_support" class="support">
+    <div class="support__container container">
+        <ul class="support__list support-grid">
+            <li class="support__item support__item-1">
+                <h2 style="width: 100%;" class="section__title supprot__title">Обратная связь</h2>
+                <p class="support__desc desc">Основные принципы «Автозащиты» — прозрачность, честность и ориентация на клиента. Мы всегда готовы поддержать наших клиентов и партнеров в любых обстоятельствах. <br>Если вы заметили превышение полномочий или другие нарушения, обратитесь в Службу доверия. Она обеспечивает анонимность и защиту конфиденциальной информации.</p>
+            </li>
+            <li class="support__item support__item-2"><a href="tel:+89999999999"><img src="./assets/images/support/support-icon-1.svg" alt="" class="support__item-icon">8 (999) 999-99-99</a></li>
+            <li class="support__item support__item-3"><a href="mailto:autozazshita@mail.ru"><img src="./assets/images/support/support-icon-2.svg" alt="" class="support__item-icon">autozazshita@mail.ru</a></li>
+            <li class="support__item support__item-4"><a href="#"><img src="./assets/images/support/support-icon-3.svg" alt="" class="support__item-icon">респ.Татарстан, г.Казань, ул.Абвгдейкина, д.123</a></li>
         </ul>
     </div>
 </section>

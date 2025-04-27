@@ -113,7 +113,7 @@
 	gap: 10px;
 }
 .aemail::after {
-	content: 'Email';
+	content: 'Почта';
 }
 .arpas::after {
 	content: 'Повторите пароль';
@@ -126,4 +126,11 @@
 }
 .inpsig:focus::placeholder{
     color: var(--color-primary);
+}
+.auname::after{
+	content: "Имя";
+}
+.ausurname::after{
+	color: black;
+	content: "Фамилия";
 }

@@ -1,9 +1,49 @@
 'use strict'
+
+
+
+// скролл к блоку
+function scrollToBlock(blockId) {
+  const nav = document.querySelector('.nav');
+
+  if (nav && nav.classList.contains('open')) {
+    nav.classList.remove('open');
+    document.querySelector('.burger').classList.remove('active');
+  }
+  if (window.location.pathname === '/' || window.location.pathname === '/index.php') {
+    const target = document.getElementById(blockId);
+    if (target) {
+      target.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    }
+  } else {
+    window.location.href = `/index.php#${blockId}`
+  }
+}
+
+
+
+// /скрол к блоку
+let btnss = document.querySelectorAll('.tab__btn')
+let texts = document.querySelectorAll('.tab__slide')
+
+btnss.forEach((tab__btn, index) => {
+  tab__btn.onclick = () => {
+    document.querySelector('.tab__btn.active').classList.remove('active')
+    tab__btn.classList.add('active')
+    document.querySelector('.tab__slide.active').classList.remove('active')
+    texts[index].classList.add('active')
+  }
+}) 
+
+
+
 // валидация инпута госномера
 document.addEventListener('DOMContentLoaded', () => {
   const inputPlate = document.querySelector('.calculate__input-user_plate')
   const allowedLetters = /^[АВЕКМНОРСТУХ]$/i
-
   inputPlate.addEventListener('input', event => {
     const value = inputPlate.value.toUpperCase()
     let validatedValue = ''
@@ -12,7 +52,6 @@ document.addEventListener('DOMContentLoaded', () => {
       const char = value[i]
 
       if ((i === 0 || i === 4 || i === 5) && allowedLetters.test(char)) {
-        // Первый, пятый и шестой символы должны быть буквами
         validatedValue += char
       } else if (
         (i === 1 || i === 2 || i === 3 || i === 6 || i === 7 || i === 8) &&
@@ -26,11 +65,12 @@ document.addEventListener('DOMContentLoaded', () => {
     inputPlate.value = validatedValue
   })
 })
-//
+// / валидация инпута госномера
+
+
+
 
 // faq dropdown
-
-
 const spollersArray = document.querySelectorAll('[data-spollers]')
 if (spollersArray.length > 0) {
   const spollersRegular = Array.from(spollersArray).filter(function (

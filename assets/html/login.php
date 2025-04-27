@@ -1,8 +1,7 @@
 <?php
 include("assets/database/connect.php");
-
-$flag = true;
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $flag = true;
     $email = $_POST['email'];
     $password = $_POST['password'];
 }
@@ -16,15 +15,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <input
                     name="email"
                     type="email"
-                    placeholder="Email"
+                    placeholder="Email*"
                     class="modal__login-email input inpsig" />
-                <?
+                <?php
                 if (isset($_POST['email'])) {
                     if (empty($email)) {
-                        echo 'Имя пусто';
+                        echo 'Введите почту';
                         $flag = false;
                     } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-                        echo "почта не валидна";
+                        echo 'почта не валидна';
                         $flag = false;
                     }
                 }
@@ -34,33 +33,33 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <input
                     name="password"
                     type="password"
-                    placeholder="Пароль"
+                    placeholder="Пароль*"
                     class="modal__login-password input inpsig" />
-                <?
+                <?php
                 if (isset($_POST['password'])) {
                     if (empty($password)) {
-                        echo 'Имя пусто';
+                        echo 'Пароль не введен';
                         $flag = false;
                     }
                 }
                 ?>
             </div>
-            <?
+            <?php
             if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 if ($flag) {
-                    $sql = "SELECT * FROM users WHERE email ='$email'";
+                    $sql = "SELECT * FROM users WHERE email = '$email'";
                     $result = $database->query($sql)->fetch();
+
                     if ($result) {
                         if (password_verify($password, $result['password'])) {
-                            $_SESSION['user_id'] = $result['user_id'];
-                            // header('Location: ./');
+                            $_SESSION['user_id'] = $result['id'];
+                            echo '<script>document.location.href="index.php"</script>';
                         } else {
-                            echo 'Пароль неверный';
+                            echo 'Неверный пароль';
                             $flag = false;
                         }
                     } else {
-                        echo "Email неверный";
-                        $falg = false;
+                        echo 'Пользователь не найден';
                     }
                 }
             }

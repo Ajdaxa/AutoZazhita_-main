@@ -1,7 +1,7 @@
 <footer class="footer">
     <div class="footer__container container">
         <div class="footer__top">
-            <a href="index.html">
+            <a href="index.php">
                 <img src="./assets/images/components/logo.svg" alt="" class="footer__logo">
             </a>
             <a href="tel:+89999999999">8 (999) 999-99-99</a>
