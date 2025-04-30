@@ -1,23 +1,31 @@
+<?php
+include 'assets/database/connect.php';
+?>
 <section class="profile">
     <div class="profile__container container">
         <h2 class="section__title">Данные</h2>
         <ul class="profile__info">
-            <li class="profile__info-img"><img src="assets/images/profile/user-img.svg" alt="" class="profile__img"></li>
+            <li class="profile__info-img">
+                <img style="width: 50px; height: 50px; border-radius: 50%;"
+                    src="<?= !empty($USER['avatar']) ? ($USER['avatar']) : 'assets/images/profile/user-img.svg'?>"
+                    alt="Фото профиля"
+                    class="profile__img">
+            </li>
             <li class="pit profile__info-name">
-                <p class="profile__info-label">ФИО:</p>
-                <p class="profile__info-value">Ололоев Оололо Ололоевич</p>
+                <p class="profile__info-label">Имя:</p>
+                <p class="profile__info-value"><?= $USER['username'] ?></p>
             </li>
             <li class="pit profile__info-birthday">
                 <p class="profile__info-label">Дата рождения:</p>
-                <p class="profile__info-value">01.01.1001</p>
+                <p class="profile__info-value"><?= !empty($USER['birthday']) ? ($USER['birthday']) : 'Не указано' ?></p>
             </li>
             <li class="pit profile__info-phone">
                 <p class="profile__info-label">Телефон</p>
-                <p class="profile__info-value">7 (911) 111-11-11</p>
+                <p class="profile__info-value"><?= !empty($USER['phone']) ? ($USER['phone']) : 'Не указано' ?></p>
             </li>
             <li class="pit profile__info-email">
                 <p class="profile__info-label">Email:</p>
-                <p class="profile__info-value">o.ololo@mail.ru</p>
+                <p class="profile__info-value"><?= $USER['email'] ?></p>
             </li>
         </ul>
         <button class="profile__btn-edit">Редактировать данные</button>
@@ -54,7 +62,7 @@
         </ul>
     </div>
 </section>
-    <!-- </div> -->
+<!-- </div> -->
 <!-- </body>
 
 </html> -->

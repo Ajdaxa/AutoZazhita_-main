@@ -2,7 +2,12 @@
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	gap: 20px;
-    flex-wrap: wrap;
+	max-width: 100%;
+	max-width: 1234px;
+}
+.catalog__item{
+	grid-column: span 1;
+	max-width: 283px;
 }
 .catalog__card{
 	border: 1px solid #ebebeb;

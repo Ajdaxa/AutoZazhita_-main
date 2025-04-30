@@ -33,6 +33,8 @@ include('assets/html/head.php');
                 include('assets/html/login.php');
             } elseif ($_GET['page'] == 'panel') {
                 include('assets/html/panel.php');
+            } elseif ($_GET['page'] == 'catalog') {
+                include('assets/html/catalog.php');
             } else {
                 include('assets/html/404.php');
             }

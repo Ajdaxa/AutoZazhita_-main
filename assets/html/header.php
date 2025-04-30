@@ -25,59 +25,13 @@ include 'assets/database/connect.php';
 					<a href="./" class="header__nav-link nav__link">Главная</a>
 				</li>
 				<li class="header__nav-item">
-					<a onclick="scrollToBlock('_catalog')" class="header__nav-link nav__link">Каталог</a>
+					<a href="./?page=catalog" class="header__nav-link nav__link">Каталог</a>
 				</li>
 				<li class="header__nav-item">
 					<a href="./?page=profile" class="header__nav-link nav__link">Профиль</a>
 				</li>
 				<li onclick="scrollToBlock('_services')" class="header__nav-item">
 					<a class="header__nav-link nav__link">Сервисы</a>
-					<!-- <div class="support">
-						<div class="support__container container">
-							<ul class="support__list support-grid">
-								<li class="support__item support__item-1">
-									<h2 style="width: 100%" class="section__title supprot__title">
-										Обратная связь
-									</h2>
-									<p class="support__desc desc">
-										Основные принципы «Автозащиты» — прозрачность, честность и
-										ориентация на клиента. Мы всегда готовы поддержать наших
-										клиентов и партнеров в любых обстоятельствах. <br />Если вы
-										заметили превышение полномочий или другие нарушения,
-										обратитесь в Службу доверия. Она обеспечивает анонимность и
-										защиту конфиденциальной информации.
-									</p>
-								</li>
-								<li class="support__item support__item-2">
-									<a href="tel:+89999999999"
-										><img
-											src="./assets/images/support/support-icon-1.svg"
-											alt=""
-											class="support__item-icon"
-										/>8 (999) 999-99-99</a
-									>
-								</li>
-								<li class="support__item support__item-3">
-									<a href="mailto:autozazshita@mail.ru"
-										><img
-											src="./assets/images/support/support-icon-2.svg"
-											alt=""
-											class="support__item-icon"
-										/>autozazshita@mail.ru</a
-									>
-								</li>
-								<li class="support__item support__item-4">
-									<a href="#"
-										><img
-											src="./assets/images/support/support-icon-3.svg"
-											alt=""
-											class="support__item-icon"
-										/>респ.Татарстан, г.Казань, ул.Абвгдейкина, д.123</a
-									>
-								</li>
-							</ul>
-						</div>
-					</div> -->
 				</li>
 			</ul>
 		</nav>
@@ -129,16 +83,20 @@ include 'assets/database/connect.php';
 			</a>
 		<? }
 		?>
-		<!-- <a href="./?page=register" class="header__actions-btn btn-login">
-			<p class="ha">Гость</p>
-			<img
-				src="../assets/images/components/login-icon.svg"
-				alt="логин"
-				class="login-icon" />
-		</a> -->
-		</div>
-		<div class="burger">
-			<span></span>
-		</div>
+		<?php if ($USER['role'] === 'admin'): ?>
+			<a class="border_bottom" href="./?page=panel">Админ панель</a>
+		<?php endif; ?>
+		<a class="exit" href="?exit">Выйти</a>
 	</div>
+	<div class="burger">
+		<span></span>
+	</div>
+</div>
 </header>
+<!-- <a href="./?page=register" class="header__actions-btn btn-login">
+	<p class="ha">Гость</p>
+	<img
+		src="../assets/images/components/login-icon.svg"
+		alt="логин"
+		class="login-icon" />
+</a> -->
